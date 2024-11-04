@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 
+import { Header } from '@/components/header/header'
 import { ThemeProvider } from '@/provider/theme-provider'
 
 const roboto = Roboto({
@@ -28,6 +29,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Header />
           {children}
         </ThemeProvider>
       </body>

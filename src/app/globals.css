@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -56,6 +57,7 @@
     --chart-5: 340 75% 55%
   }
 }
+
 @layer base {
   * {
     @apply border-border;
@@ -63,4 +65,26 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.c-container {
+  @apply max-w-[1440px] w-[90%] mx-auto
+}
+
+.header-container {
+  @apply grid grid-cols-3
+}
+
+.header-container > *:nth-child(1) {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.header-container > *:nth-child(2) {
+  margin-inline: auto;
+}
+
+.header-container > *:nth-child(3) {
+  margin-right: 0;
+  margin-left: auto;
 }
