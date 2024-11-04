@@ -1,4 +1,4 @@
-import { ThemeToggle } from '../ui/theme-toggle'
+import { ThemeToggle } from '../../ui/theme-toggle'
 import { NavLink } from './nav-link'
 
 function Header() {
